@@ -40,7 +40,7 @@ const Accordion = ({/*{questionsAnswers}*/}) => {
         showDescription={showDescription}
         fontWeightBold={fontWeightBold}
         ariaExpanded={ariaExpanded}
-       
+        key={item.question}
         item={item}
         index={index}
      
