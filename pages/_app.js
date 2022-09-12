@@ -15,7 +15,9 @@ Router.events.on('routeChangeError', () => NProgress.done());
 function MyApp({ Component, pageProps }) {
   
   return <AuthContextProvider><AppProvider><SearchProvider><ApolloProvider client={client}><Component {...pageProps}  /><Head>
-    
+      <link rel="manifest" href="/manifest.json" />
+      <link rel="apple-touch-icon" href="/icon.png"></link>
+          <meta name="theme-color" content="#fff" />
     <meta name="application-name" content="PWA App" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="default" />
